@@ -23,6 +23,14 @@ namespace CheckFunds
         public MainWindow()
         {
             InitializeComponent();
+
+            CheckFunds.Reader reader = new CheckFunds.Reader();
+
+            List<string> list = new List<string>();
+            list = reader.SupList;
+
+            List<List<string>> list2 = new List<List<string>>();
+            list2 = reader.FundList(@"C:\Temp\Marketing\Lists of Funds\Israel\Israeli funds.xlsx");
         }
     }
 }
