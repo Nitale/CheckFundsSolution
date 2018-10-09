@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CheckFunds
 {
-    class coordinator
+    class Coordinator
     {
     }
 }
