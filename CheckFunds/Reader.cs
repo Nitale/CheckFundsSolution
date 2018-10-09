@@ -65,10 +65,12 @@ namespace CheckFunds
                         {
                             if (worksheet.Cells[row, columns].Value != null)
                             {
-                                List<string> _data = new List<string>();
-                                _data.Add(row.ToString());
-                                _data.Add(worksheet.Cells[row, columns].Value.ToString());
-                                fundList.Add(_data);
+                                List<string> data = new List<string>
+                                {
+                                    row.ToString(),
+                                    worksheet.Cells[row, columns].Value.ToString()
+                                };
+                                fundList.Add(data);
                             }
                         }
                     }
