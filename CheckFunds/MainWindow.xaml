@@ -6,14 +6,13 @@
         xmlns:local="clr-namespace:CheckFunds"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Label Content="Select the path of the List of funds folder and push &quot;Start&quot;." HorizontalAlignment="Right" Height="62" Margin="-4,1,-4,0" VerticalAlignment="Top" Width="800" AutomationProperties.IsOffscreenBehavior="Onscreen" RenderTransformOrigin="0.5,0.5" ForceCursor="True">
-        <Label.RenderTransform>
-            <TransformGroup>
-                <ScaleTransform/>
-                <SkewTransform/>
-                <RotateTransform/>
-                <TranslateTransform/>
-            </TransformGroup>
-        </Label.RenderTransform>
-    </Label>
+
+    <StackPanel Width="800" Height="420" MaxWidth="800" MaxHeight="420" Margin="0">
+        <Label x:Name="GeneralMessage" Content="Hello World!" Background="#00000000" Width="600" Height="28" FontWeight="Bold"/>
+        <TextBox x:Name="TextDisplay" Height="253" TextWrapping="Wrap" Text="TextBox" Background="#FF151313" Padding="0" Width="640" HorizontalAlignment="Left" Margin="20,0,60,15" FontFamily="Segoe UI Semilight" Foreground="White" FontWeight="Bold"/>
+        <Button x:Name="FolderButton" Click="FolderButton_Click" Content="Browse" Width="50" Height="22" FontWeight="Bold" HorizontalAlignment="Right" Margin="0,0,20,0"/>
+        <Label x:Name="PathMessage" Content="Indicate the &quot;Marketing&quot; folder" FontWeight="Bold" HorizontalAlignment="Right" Margin="0,-22,90,0"/>
+        <Button x:Name="StartButton" Content="Start" Width="70" Height="25" HorizontalAlignment="Right" Margin="0,50,20,0" FontWeight="Bold"/>
+    </StackPanel>
+
 </Window>
