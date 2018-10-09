@@ -61,7 +61,7 @@ namespace CheckFunds
                 {
                     if (worksheet.Cells[1, columns].Text.Contains("mail") || worksheet.Cells[1, columns].Text.Contains("Mail") || worksheet.Cells[1, columns].Text.Contains("Email") || worksheet.Cells[1, columns].Text.Contains("email"))
                     {
-                        for (int row = worksheet.Dimension.Start.Row + 1; row < worksheet.Dimension.End.Row; row++)
+                        for (int row = worksheet.Dimension.Start.Row + 1; row < worksheet.Dimension.End.Row + 1; row++)
                         {
                             if (worksheet.Cells[row, columns].Value != null)
                             {
